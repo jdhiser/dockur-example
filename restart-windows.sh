@@ -22,8 +22,14 @@ main()
 	echo 
 	echo '****************************************'
 	echo 'Docker is up, connect with:'
-	echo 'sshpass -p gates ssh bill@gates -p 2022'
+	echo '	sshpass -p gates ssh bill@gates -p 2022'
+	echo
+	echo 'Press enter to shut down'
 	echo '****************************************'
+
+	pause
+	docker compose down
 }
 
 main "$@"
+
